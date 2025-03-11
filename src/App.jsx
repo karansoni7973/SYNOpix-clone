@@ -10,7 +10,6 @@ import './assets/css/style.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import ProgressScroll from './components/common/ProgressScroll';
 import Loading from './components/common/Loading';
-import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import MenuBar from './components/common/MenuBar';
 import MouseCursor from './components/common/MousrCursor';
@@ -26,13 +25,13 @@ function App() {
     console.log("animation")
     new WOW().init(); // Initialize WOW.js
   }, []);
+
   return (
     <Router>
       <Preloader/>
       {/* <Loading/> */}
       <ProgressScroll/>
       <MouseCursor/>
-      {/* <Navbar/> */}
       <MenuBar/>
       <Routes>
         <Route path="/" element={<Home />} />

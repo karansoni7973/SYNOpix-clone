@@ -3,7 +3,6 @@ import $ from 'jquery';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Isotope from 'isotope-layout'
-//port './StartWork.css'; // Import the CSS file
 
 // Import images
 import one from '../../assets/images/portfolio/portfolio/1/1.jpg';
@@ -27,47 +26,24 @@ import fiveteena from '../../assets/images/portfolio/portfolio/1/15a.jpg';
 import fiveteen from '../../assets/images/portfolio/portfolio/1/15.jpg';
 
 export const StartWork = () => {
-  useEffect(() => {
-    // Initialize Swiper and other jQuery plugins
-    const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: { el: '.swiper-pagination', clickable: true },
-      });
-
-        // **Fix Isotope Initialization**
+useEffect(() => {
     let iso;
-    if ($('.gallery').length) {
-      iso = new Isotope('.gallery', { itemSelector: '.items' });
+    const gallery = document.querySelector('.gallery');
+    if (gallery) {
+        iso = new Isotope(gallery, { itemSelector: '.items' });
     }
-    // jQuery code for filtering
+
+    // Filtering logic
     $('.filtering').on('click', 'span', function () {
-      var filterValue = $(this).attr('data-filter');
-      $('.gallery').isotope({ filter: filterValue });
+        let filterValue = $(this).attr('data-filter');
+        iso.arrange({ filter: filterValue });
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
-    $('.filtering').on('click', 'span', function () {
-      $(this).addClass('active').siblings().removeClass('active');
-    });
-
-    // Initialize isotope
-    $('.gallery').isotope({
-      itemSelector: '.items',
-    });
-     // Cleanup function to remove event listeners
-   // **Filter Handling**
-   $('.filtering').on('click', 'span', function () {
-    var filterValue = $(this).attr('data-filter');
-    iso.arrange({ filter: filterValue });
-
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-
-  // Cleanup function to remove event listeners
-  return () => {
-    if (swiper) swiper.destroy();
-    if (iso) iso.destroy();
-  };
+    // Cleanup function
+    return () => {
+        iso?.destroy();
+    };
 }, []);
 
   return (

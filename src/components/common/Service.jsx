@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeServices = () => {
+const Service = () => {
   const services = [
     {
       icon: 'bi bi-phone',
@@ -98,4 +98,4 @@ const HomeServices = () => {
   );
 };
 
-export default HomeServices;
+export default Service;
