@@ -33,16 +33,16 @@ const MouseCursor = () => {
     document.addEventListener("mousemove", moveCursor);
     requestAnimationFrame(updateCursor);
 
-    // Handle hover effects on elements like links
+    // Handle hover effects on links and buttons
     document.addEventListener("mouseenter", (event) => {
-      if (event.target.matches("a, .cursor-pointer")) {
+      if (event.target instanceof HTMLElement && event.target.matches("a, .cursor-pointer")) {
         cursorInner.classList.add("cursor-hover");
         cursorOuter.classList.add("cursor-hover");
       }
     });
 
     document.addEventListener("mouseleave", (event) => {
-      if (event.target.matches("a, .cursor-pointer")) {
+      if (event.target instanceof HTMLElement && event.target.matches("a, .cursor-pointer")) {
         cursorInner.classList.remove("cursor-hover");
         cursorOuter.classList.remove("cursor-hover");
       }

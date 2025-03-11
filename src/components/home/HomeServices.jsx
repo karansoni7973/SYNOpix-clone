@@ -3,7 +3,7 @@ import React from 'react';
 const HomeServices = () => {
   const services = [
     {
-      icon: 'pe-7s-phone',
+      icon: 'bi bi-phone',
       title: 'Web and Mobile App',
       items: [
         'UI/UX Design',
@@ -16,7 +16,7 @@ const HomeServices = () => {
       ],
     },
     {
-      icon: 'ion-ios-bolt-outline',
+      icon: 'bi bi-lightning',
       title: 'Graphic Design',
       items: [
         'Logo & Identity Design',
@@ -28,7 +28,7 @@ const HomeServices = () => {
       ],
     },
     {
-      icon: 'pe-7s-paint-bucket',
+      icon: 'bi bi-palette',
       title: 'Branding',
       items: [
         'Business Brochure Design',
@@ -40,7 +40,7 @@ const HomeServices = () => {
       ],
     },
     {
-      icon: 'pe-7s-display1',
+      icon: 'bi bi-display',
       title: 'Media Advertising',
       items: [
         'Creation of a Concept',

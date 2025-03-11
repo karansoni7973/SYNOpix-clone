@@ -4,25 +4,25 @@ import { useSpring, animated } from '@react-spring/web';
 const Services = () => {
   const services = [
     {
-      icon: 'pe-7s-phone',
+      icon: 'bi bi-phone',
       title: 'Web and Mobile App',
       text: 'Transforming Ideas into Innovative Web and Mobile Apps',
       delay: 100
     },
     {
-      icon: 'ion-ios-bolt-outline',
+      icon: 'bi bi-lightning',
       title: 'Graphic Designing',
       text: 'Elevate Your Brand with Stunning Graphic Design Solutions',
       delay: 200
     },
     {
-      icon: 'pe-7s-paint-bucket',
+      icon: 'bi bi-palette',
       title: 'Branding',
       text: 'Crafting Unique Brand Identities that Stand Out in the Market',
       delay: 300
     },
     {
-      icon: 'pe-7s-display1',
+      icon: 'bi bi-display',
       title: 'Media Advertising',
       text: 'Targeted Media Advertising Solutions that Drive Business Growth',
       delay: 400

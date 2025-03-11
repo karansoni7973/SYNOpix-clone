@@ -52,7 +52,7 @@ const HomeAbout = () => {
                             <div className="ftbox mt-30">
                                 <ul>
                                     <li className="wow fadeIn" data-wow-delay=".3s">
-                                        <span className="icon color-font pe-7s-gleam"></span>
+                                        <span className="icon color-font bi bi-stars"></span>
                                         <h6>Pixel <br /> Perfect</h6>
                                         <div className="dots">
                                             <span></span>
@@ -61,7 +61,7 @@ const HomeAbout = () => {
                                         </div>
                                     </li>
                                     <li className="space wow fadeIn" data-wow-delay=".5s">
-                                        <span className="icon color-font pe-7s-paint-bucket"></span>
+                                        <span className="icon color-font bi bi-palette"></span>
                                         <h6>Creative <br /> Design</h6>
                                         <div className="dots">
                                             <span></span>
@@ -70,7 +70,7 @@ const HomeAbout = () => {
                                         </div>
                                     </li>
                                     <li className="wow fadeIn" data-wow-delay=".8s">
-                                        <span className="icon color-font pe-7s-medal"></span>
+                                        <span className="icon color-font bi bi-award-fill"></span>
                                         <h6>High <br /> Performance</h6>
                                         <div className="dots">
                                             <span></span>

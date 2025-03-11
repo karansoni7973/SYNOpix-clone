@@ -132,13 +132,7 @@ const Testimonials = () => {
           }
   ];
 
-  useEffect(() => {
-    // Initialize WOW.js for animations
-    new WOW.WOW({
-      live: false
-    }).init();
-  }, []);
-
+ 
   return (
     <section className="block-sec" data-scroll-index="4">
       <div className="background bg-img pt-100 pb-0 parallaxie" 

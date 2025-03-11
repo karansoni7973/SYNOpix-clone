@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,8 +15,17 @@ import Footer from './components/common/Footer';
 import MenuBar from './components/common/MenuBar';
 import MouseCursor from './components/common/MousrCursor';
 import Preloader from './components/common/Preloader';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "animate.css";
+import WOW from "wow.js";
+import "./app.css"
+import '/node_modules/ionicons/dist/css/ionicons.min.css';
 
 function App() {
+  useEffect(() => {
+    console.log("animation")
+    new WOW().init(); // Initialize WOW.js
+  }, []);
   return (
     <Router>
       <Preloader/>
