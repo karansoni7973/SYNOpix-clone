@@ -25,7 +25,7 @@ const HomePortfolio = () => {
   ];
 
   return (
-    <section className="work-carousel2 metro section-padding">
+    <section className="work-carousel2 metro section-padding ">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-md-10">
@@ -49,10 +49,11 @@ const HomePortfolio = () => {
                 nextEl: '.next-ctrl',
                 prevEl: '.prev-ctrl',
               }}
+              slidesPerView={2}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1024: { slidesPerView: 2 },
               }}
               className="portfolio-swiper"
             >

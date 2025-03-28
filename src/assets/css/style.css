@@ -4562,7 +4562,7 @@ a:hover, span:hover {
 .feat .items {
   padding: 60px 40px;
   position: relative;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .feat .items:after {
@@ -4577,15 +4577,15 @@ a:hover, span:hover {
 }
 
 .feat .items:before {
-  content: '';
+  content: ''; 
   position: absolute;
   top: -1px;
   left: -1px;
   bottom: -1px;
   right: 0px;
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
+  background-color: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59)); 
+  background-color: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59); 
+  background-color: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59); 
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   z-index: -2;
   opacity: 0;
@@ -6678,9 +6678,19 @@ a:hover, span:hover {
 
 .block-sec .testim-box {
   position: relative;
+  min-height: 200px;
   padding: 40px 40px;
   margin-bottom: -120px;
   z-index: 2;
+}
+
+.slic-item {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px; /* Fixed height */
+  overflow: hidden; /* Hide any overflow */
 }
 
 .block-sec .testim-box:after {
@@ -7557,11 +7567,18 @@ letter-spacing: 1px;
 }
 .mb-30 { margin-bottom:20px !important;}
 
+.call-action .content h2 b{
+  display: inline-block;
+  
+}
+
 .call-action .content h2 b span {
+  
   color: #fff;
+  /* line-height: 1.2; */
   -webkit-text-stroke-width: 0;
   text-transform: none;
-    font-size: 40px;
+  font-size: 2.5vw;
 }
 
 .call-action .content h2 .whitespace {
@@ -8042,7 +8059,7 @@ footer .item .copy-right p a {
     background-position: center !important;
   }
   .call-action .content h2 {
-    font-size: 12vw !important;
+    font-size: 4vw !important;
 }
 .call-action .content h2 b span {
     color: #fff;
@@ -8641,7 +8658,7 @@ footer .item .copy-right p a {
     bottom: -5px;
   }
   .call-action .content h2 {
-    font-size: 7vw;
+    font-size: 4vw;
   }
   .portfolio .filtering .filter {
     padding: 15px 5px;

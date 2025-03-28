@@ -74,7 +74,7 @@ const Service = () => {
               key={index}
               className="col-lg-3 col-md-6 items md-mb30"
             >
-              <div className="item-box wow fadeIn" data-wow-delay=".3s">
+              <div className="item wow fadeIn" data-wow-delay=".3s">
                 <span className="icon">
                   <i className={`icon color-font ${service.icon}`}></i>
                 </span>

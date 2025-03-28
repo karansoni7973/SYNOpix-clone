@@ -22,10 +22,13 @@ const PagesHeader = () => {
         </div>
       </div>
       <div className="half sub-bg">
-        <div className="circle-color">
-          <div className="gradient-circle"></div>
-          <div className="gradient-circle two"></div>
+        <div className="circle-bg">
+          <div className="circle-color fixed">
+            <div className="gradient-circle"></div>
+            <div className="gradient-circle two"></div>
+          </div>
         </div>
+        
       </div>
     </header>
   );

@@ -4,7 +4,8 @@ import aboutImage2 from '../../assets/images/02.jpg';
 
 const HomeAbout = () => {
     return (
-        <div className="about section-padding agency position-re" data-scroll-index="1">
+        <div className="about section-padding agency position-re"
+         data-scroll-index="1">
             <div className="container">
                 <div className="row">
                     {/* Image Section */}

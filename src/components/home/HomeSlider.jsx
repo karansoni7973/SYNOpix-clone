@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -13,7 +13,7 @@ const HomeSlider = () => {
   
 
   return (
-    <header className="slider slider-prlx fixed-slider text-center">
+    <header className="slider slider-prlx text-center" data-scroll-index="0">
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         speed={1000}

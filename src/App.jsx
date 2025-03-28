@@ -15,6 +15,12 @@ import MenuBar from './components/common/MenuBar';
 import MouseCursor from './components/common/MousrCursor';
 import Preloader from './components/common/Preloader';
 import "bootstrap-icons/font/bootstrap-icons.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
+import "../src/assets/js/animated.headline";
+import "../src/assets/js/map";
+// import "../src/assets/js/plugins";
+// import "../src/assets/js/scripts";
+
 import "animate.css";
 import WOW from "wow.js";
 import "./app.css"
@@ -27,6 +33,7 @@ function App() {
   }, []);
 
   return (
+    
     <Router>
       <Preloader/>
       {/* <Loading/> */}

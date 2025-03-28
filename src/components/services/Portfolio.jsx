@@ -3,7 +3,7 @@ import React from 'react';
 const Portfolio = () => {
 
     return (
-        <header className="works-header fixed-slider hfixd valign">
+        <header className="works-header valign">
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-lg-7 col-md-9 static">
@@ -14,7 +14,7 @@ const Portfolio = () => {
                                 things in different way than ever before.</p>
                         </div>
 
-                        <div className="bactxt custom-font valign">
+                        <div className="bactxt custom-font ">
                             <span className="full-width">services</span>
                         </div>
                     </div>
