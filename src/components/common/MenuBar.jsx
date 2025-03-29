@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import synoLogo from "/src/assets/images/syno-logo.svg";
 import $ from "jquery";
 import "scrollIt";
 
 const MenuBar = () => {
   const navbarRef = useRef(null);
+  const [hoveredItem, setHoveredItem] = useState(null);
   let didScroll = false;
   let lastScrollTop = 0;
   const delta = 5;
@@ -99,7 +100,15 @@ const MenuBar = () => {
                     { href: "/case-study", text: "Case Study", nm: "04." },
                     { href: "/contact", text: "Contact Us", nm: "05." },
                   ].map((item, index) => (
-                    <li key={index}>
+                    <li
+                      key={index}
+                      onMouseEnter={() => setHoveredItem(item.text)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                      style={{
+                        opacity: hoveredItem && hoveredItem !== item.text ? 0.3 : 1, // Instant dimming effect
+                        fontWeight: hoveredItem === item.text ? "bold" : "normal", // Only bold, no color change
+                      }}
+                    >
                       <div className="o-hidden">
                         <a href={item.href} className="link">
                           <span className="nm">{item.nm}</span>
