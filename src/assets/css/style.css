@@ -1286,6 +1286,15 @@ a:hover, span:hover {
 
 /* ====================== [ End Text Animation & Images ] ====================== */
 /* ====================== [ Start Cursor Style ] ====================== */
+.service-card {
+  transition: border 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  border-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) 1 ; 
+}
+
 .mouse-cursor {
   position: fixed;
   left: 0;
@@ -1923,6 +1932,7 @@ a:hover, span:hover {
 }
 
 .topnav {
+  background: transparent; /* Initially no background */
   position: fixed;
   top: 0;
   left: 0;
@@ -1930,10 +1940,14 @@ a:hover, span:hover {
   z-index: 999999;
   padding: 0px 0;
   color: #fff;
-  -webkit-transition: all .7s;
-  -o-transition: all .7s;
-  transition: all .7s;
+  transition: all 0.7s ease-in-out;
 }
+
+.topnav.scrolled {
+  background: rgb(27, 29, 33); /* Background appears when scrolled */
+  padding: 0px 0; /* Slight padding change for effect */
+}
+
 
 .topnav .container,
 .topnav .container-fluid {
@@ -7530,6 +7544,12 @@ letter-spacing: 1px;
 .next-project .content p {
   font-size: 18px;
   color: #555;
+}
+
+.contact-number {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* ====================== [ End Blog ] ====================== */

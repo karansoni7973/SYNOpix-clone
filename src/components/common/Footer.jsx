@@ -1,6 +1,18 @@
 import React from 'react';
 import dasssoftLogo from '/src/assets/images/dasssoft.png';
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const goToPrivacyPolicy = () =>{
+    navigate("/privacy-policy");
+  }
+
+  const goToTermsCondition = () =>{
+    navigate("/terms&condition");
+  }
+
   return (
     <footer>
       <div className="container">
@@ -15,9 +27,9 @@ const Footer = () => {
                 <li><a href="#">|</a></li>
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">|</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="" onClick={goToPrivacyPolicy}>Privacy Policy</a></li>
                 <li><a href="#">|</a></li>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a href="" onClick={goToTermsCondition}>Terms & Condition</a></li>
               </ul>
             </div>
           </div>

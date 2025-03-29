@@ -1,54 +1,54 @@
-import React from 'react';
+import React from "react";
 
 const Service = () => {
   const services = [
     {
-      icon: 'bi bi-phone',
-      title: 'Web and Mobile App',
+      icon: "bi bi-phone",
+      title: "Web and Mobile App",
       items: [
-        'UI/UX Design',
-        'Responsive Website',
-        'Mobile App (Android & iOS)',
-        'Product Dashboard',
-        'Prototype and Wireframe',
-        '(Motion) Animation Graphic',
-        'Product Flow',
+        "UI/UX Design",
+        "Responsive Website",
+        "Mobile App (Android & iOS)",
+        "Product Dashboard",
+        "Prototype and Wireframe",
+        "(Motion) Animation Graphic",
+        "Product Flow",
       ],
     },
     {
-      icon: 'bi bi-lightning',
-      title: 'Graphic Design',
+      icon: "bi bi-lightning",
+      title: "Graphic Design",
       items: [
-        'Logo & Identity Design',
-        'Poster and Infographic',
-        'Illustration',
-        'Printed Literature',
-        'Packaging & POS',
-        'Flyer Design',
+        "Logo & Identity Design",
+        "Poster and Infographic",
+        "Illustration",
+        "Printed Literature",
+        "Packaging & POS",
+        "Flyer Design",
       ],
     },
     {
-      icon: 'bi bi-palette',
-      title: 'Branding',
+      icon: "bi bi-palette",
+      title: "Branding",
       items: [
-        'Business Brochure Design',
-        'Corporate PPT Design',
-        'Brand Guidelines Design',
-        'Corporate Styling',
-        'Consultancy & Support',
-        'Trends & Insights',
+        "Business Brochure Design",
+        "Corporate PPT Design",
+        "Brand Guidelines Design",
+        "Corporate Styling",
+        "Consultancy & Support",
+        "Trends & Insights",
       ],
     },
     {
-      icon: 'bi bi-display',
-      title: 'Media Advertising',
+      icon: "bi bi-display",
+      title: "Media Advertising",
       items: [
-        'Creation of a Concept',
-        'Banner Advertising',
-        'Video Clips',
-        'SMM, Facebook, Instagram',
-        'Adwords, Accents, Youtube',
-        'Online & Offline Advertising',
+        "Creation of a Concept",
+        "Banner Advertising",
+        "Video Clips",
+        "SMM, Facebook, Instagram",
+        "Adwords, Accents, Youtube",
+        "Online & Offline Advertising",
       ],
     },
   ];
@@ -70,11 +70,8 @@ const Service = () => {
         </div>
         <div className="row">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="col-lg-3 col-md-6 items md-mb30"
-            >
-              <div className="item wow fadeIn" data-wow-delay=".3s">
+            <div key={index} className="col-lg-3 col-md-6 items md-mb30 service-card">
+              <div className="item wow fadeIn " data-wow-delay=".3s">
                 <span className="icon">
                   <i className={`icon color-font ${service.icon}`}></i>
                 </span>

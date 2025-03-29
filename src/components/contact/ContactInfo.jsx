@@ -15,16 +15,16 @@ const ContactInfo = () => {
                 
                 </div>
             </div>
-              {/* <!-- <div className="col-lg-4">
+              <div className="col-lg-4">
                    <div className="cont-info">
-                    <h4 className="fw-700 color-font mb-30">Contact Number</h4>
-                    <h3 className="wow" data-splitting>Contact Email</h3>
+                    <h4 className="fw-700 color-font mb-30">Phone Number</h4>
+                    <h3 className="wow" data-splitting>Contact Number</h3>
                      <div className="item">                          
-                        <h5>+1- 404-731-3885</h5>
+                        <h5><a href="tel:+14709306409">+1 (470) 930-6409</a></h5>
                     </div>
                 
                 </div>
-            </div> --> */}
+            </div> 
               <div className="col-lg-4">
                    <div className="cont-info">
                     <h4 className="fw-700 color-font mb-30">Address</h4>

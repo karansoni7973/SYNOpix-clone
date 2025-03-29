@@ -25,6 +25,8 @@ import "animate.css";
 import WOW from "wow.js";
 import "./app.css"
 import '/node_modules/ionicons/dist/css/ionicons.min.css';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsCondition from './pages/Terms&Condition';
 
 function App() {
   useEffect(() => {
@@ -46,6 +48,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/case-study" element={<CaseStudy />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+        <Route path='/terms&condition' element={<TermsCondition/>} />
       </Routes>
       <Footer/>
     </Router>

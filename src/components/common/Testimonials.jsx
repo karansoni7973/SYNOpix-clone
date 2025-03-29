@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import bgVid from '/src/assets/images/bg-vid.jpg';
+import client0 from '../../assets/images/clients/0.png'
 import client1 from '/src/assets/images/clients/1.jpg'
 import client2 from '/src/assets/images/clients/2.jpg'
 import client3 from '/src/assets/images/clients/3.jpg'
@@ -7,6 +8,12 @@ import client3 from '/src/assets/images/clients/3.jpg'
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const clients = [
+    {
+      text: `These creations were not only visually striking but also thoughtfully tailored to my brand. I fell in love with every design. Their bold creativity along with their attention to detail exceeded my expectations in every way.`,
+      img: client0,
+      name: "Natalie",
+      title: "Natalie A. Southwell",
+    },
     {
       text: `The team from SYNOpix is great to work with for design websites.
       They spend time to understand the clients tech requirements and also the
